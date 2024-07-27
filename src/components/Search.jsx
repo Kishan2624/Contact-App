@@ -49,10 +49,10 @@ const Search = ({ isOpen, searchResults }) => {
 
   return (
     <div className="container mx-auto flex items-center justify-center gap-3 px-4 py-2">
-      <div className="flex h-[40px] items-center justify-start gap-3">
+      <div className="flex h-[40px] w-full min-w-[150px] max-w-[295px] items-center justify-start gap-3">
         <input
           onChange={handleSearch}
-          className="w-[295px] rounded-lg border border-solid border-white bg-transparent py-2 ps-10 text-white outline-none placeholder:font-light placeholder:text-white"
+          className="w-full rounded-lg border border-solid border-white bg-transparent py-2 ps-10 text-white outline-none placeholder:font-light placeholder:text-white"
           type="text"
           placeholder="Search Contact"
         />
@@ -60,7 +60,7 @@ const Search = ({ isOpen, searchResults }) => {
       </div>
       <FaPlus
         onClick={handleAddBtn}
-        className="h-[52px] w-[52px] cursor-pointer rounded-full bg-white p-[14px] text-sm text-black transition-transform ease-in-out hover:scale-105"
+        className="h-full max-h-[52px] min-h-[38px] w-full min-w-[38px] max-w-[52px] cursor-pointer rounded-full bg-white p-[14px] text-sm text-black transition-transform ease-in-out hover:scale-105"
       />
     </div>
   );

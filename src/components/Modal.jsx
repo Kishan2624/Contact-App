@@ -68,8 +68,8 @@ const Modal = ({ isOpen, isClose, isUpdate, isUpdated, contactData }) => {
   return ReactDOM.createPortal(
     <>
       <div className="container z-50 mx-auto flex h-[100vh] w-[100vw] items-center justify-center backdrop-blur-[2px]">
-        <div className="mx-auto max-w-[376px]">
-          <div className="mx-auto h-[244px] w-[348px] rounded-md bg-white shadow-md shadow-black">
+        <div className="mx-auto w-full max-w-[376px]">
+          <div className="mx-auto h-[244px] w-11/12 rounded-md bg-white shadow-md shadow-black">
             <div className="relative flex h-full w-full items-center justify-center">
               <IoIosCloseCircleOutline
                 onClick={handleCloseBtn}
